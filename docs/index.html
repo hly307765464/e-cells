@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>易格助手-Excel辅助插件</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="keywords" content="易格助手,Excel工具箱,Excel插件,VSTO插件,Vb.net">
+  <meta name="description" content="易格助手操作文档">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+   <!-- Theme -->
+  <link rel="stylesheet" href="/css/theme-simple.css">
+   <!-- Custom Styles -->
+   <style>
+     :root {
+        --content-max-width: 100em;
+        --base-font-size: 15px;
+        --theme-color : rgb(0, 128, 32);
+     }
+   </style>
+   
+</head>
+<body>
+  <div id="app">文档加载中……</div>
+  <script>
+    window.$docsify = {
+    //logo: '/_media/icon.svg',//在侧边栏中出现的网站图标
+    name: '关于易格助手',
+    repo: '',
+    loadSidebar: true,
+    subMaxLevel: 2,
+    loadNavbar: true,
+    //coverpage: true,//是否启动首页
+    auto2top: true,//切换页面后是否自动跳转到页面顶部
+
+    <!--  搜索-->
+    search: {
+      maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+      paths:'auto', // or 'auto'
+      placeholder: '搜索',
+      noData: '未匹配到内容',
+      // 搜索标题的最大层级, 1 - 6
+      depth: 6,
+      hideOtherSidebarContent: false // 是否隐藏其他侧边栏内容
+    },
+    beian: {
+        ICP: "湘ICP备2023023804号",
+        NISMSP: {
+            number: "",
+            url: "",
+        },
+    },
+    tabs: {
+    persist    : true,      // default
+    sync       : true,      // default
+    theme      : 'classic', // default
+    tabComments: true,      // default
+    tabHeadings: true       // default
+  }
+  }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="/js/docsify@4.js"></script>
+  <!--支持代码块复制-->
+  <script src="/js/docsify-copy-code.js"></script>
+  <!--支持图片缩小放大-->
+  <script src="/js/zoom-image.min.js"></script>
+  <!--全文搜索配置项-->
+  <script src="/js/search.min.js"></script>
+  <!--字数统计-->
+  <script src="/js/countable.js"></script>
+  <!--VB语言高亮-->
+  <script src="/js/prism-t4-vb.min.js"></script>
+  <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+  <script src="/js/docsify-copy-code.js"></script>
+  <!--备案插件-->
+  <script src="/js/beian.min.js"></script>
+  <!--tab选项卡插件-->
+  <script src="/js/docsify-tabs@1.js"></script>
+  
+</body>
+</html>
